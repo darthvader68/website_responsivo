@@ -6,24 +6,31 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    overflow: hidden;
 }
 
 body {
-    background-color: gray;
+    background-image: url('img/bg-inicio-site.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* a imagem ocupa todo o espaco  da area destinada*/
+    background-position: center;
+    height: 100%;
+    color: white;
+    margin-top: 0 auto;
+    padding: 15px;
 }
 
 /* estilos do header */
 header {
     width: 100%;
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
-header .logo img {
+.logo img {
     max-width: 40px;
 }
 
 .interface {
-    background-color: cadetblue;
     max-width: 1280px;
     display: flex;
     flex-direction: row;
@@ -31,21 +38,29 @@ header .logo img {
     align-items: center;
 }
 
-.menu_desktop ul {
+ul {
     list-style: none;
 }
 
-.menu_desktop nav ul li {
+nav ul li {
     display: inline-block;
 }
 
-.menu_desktop nav ul li a {
+nav ul li a {
+    display: inline-block;
     text-decoration: none;
     color: white;
     margin: 0 40px;
+    transition: 0.7s;
 }
 
-.btn_contato button {
+nav a:hover {
+    color: #0d2394;
+    transition: 0.3s all; 
+   
+}
+
+button {
     width: 140px;
     height: 50px;
     border-radius: 5px;
@@ -54,4 +69,46 @@ header .logo img {
     border: 1px solid white;
     color: white;
     cursor: pointer;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: white;
+    color: #163778;
+}
+
+/* Estilo do hero */
+.hero-site {
+    display: flex;
+    height: 100vh;
+    padding: 70px;
+    padding-top: 10px;
+}
+
+.interface {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.txt_hero h1 {
+    font-size: 4em;
+    font-weight: normal;
+    line-height: 70px;
+    padding-bottom: 20px;
+}
+
+span {
+    display: block;
+    font-weight: 700;
+}
+
+.txt_hero p {
+    padding-bottom: 20px;
+}
+
+
+.txt_hero a button {
+    width: 160px;
+
 }
