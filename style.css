@@ -6,31 +6,27 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 body {
-    background-image: url('img/bg-inicio-site.jpg');
-    background-repeat: no-repeat;
-    background-size: cover; /* a imagem ocupa todo o espaco  da area destinada*/
-    background-position: center;
-    height: 100%;
-    color: white;
-    margin-top: 0 auto;
-    padding: 15px;
+    background-color: #e3e3e3;
 }
 
 /* estilos do header */
 header {
     width: 100%;
     padding: 20px 0;
+    position: fixed; /*a partir daqui o header fica transparente*/
+    top: 0;
+    left: 0;
 }
 
 .logo img {
     max-width: 40px;
 }
 
-.interface {
+.menu {
     max-width: 1280px;
     display: flex;
     flex-direction: row;
@@ -78,11 +74,21 @@ button:hover {
 }
 
 /* Estilo do hero */
+
+
 .hero-site {
-    display: flex;
+    background-image: url('img/bg-inicio-site.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* a imagem ocupa todo o espaco  da area destinada*/
+    background-position: center;
+    height: 100%;
+    color: white;
+    margin-top: 0 auto;
+    padding: 15px;
+    /*display: flex;
     height: 100vh;
     padding: 70px;
-    padding-top: 10px;
+    padding-top: 10px;*/
 }
 
 .interface {
@@ -93,22 +99,52 @@ button:hover {
 
 .txt_hero h1 {
     font-size: 4em;
-    font-weight: normal;
+    font-weight: 200;
     line-height: 70px;
     padding-bottom: 20px;
 }
 
 span {
     display: block;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .txt_hero p {
-    padding-bottom: 20px;
+    font-weight: 300px;
+    font-size: 20px;
+    margin: 20px 0;
 }
 
-
 .txt_hero a button {
-    width: 160px;
+    width: 180px;
+    height: 60px;
+    font-size: 20px;
+}
 
+/* estilo das vantagens */
+
+section.vantagens {
+    padding: 80px;
+}
+
+.vantagens .itens_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 60px;
+}
+
+.img_itens img {
+    max-width: 420px;
+}
+
+.vantagens .itens_container .txt_intens h3 {
+    font-size: 3em;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.itens_container .txt_intens h3 span {
+    font-weight: 200px;
 }
