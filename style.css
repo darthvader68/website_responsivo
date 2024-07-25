@@ -84,7 +84,7 @@ button:hover {
     height: 100%;
     color: white;
     margin-top: 0 auto;
-    padding: 165px;
+    padding: 80px;
 }
 
 .interface1 {
@@ -267,4 +267,34 @@ section.vantagens {
 .interface4 a button {
     width: 200px;
     /*padding: 10px;*/
+}
+
+/* estilo da secao como funciona: */
+.como_funciona {
+    padding: 80px 0;
+}
+
+.interface5 {
+    display: flex;
+}
+
+.txt_funciona, .instrucoes {
+    display: inline-block;
+    /*flex-direction: row;
+    justify-content: space-around;
+    align-items: center;*/
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: top;
+}
+
+.txt_funciona h3 {
+    font-size: 3em;
+    font-weight: 200;
+    line-height: 50px;
+}
+
+.txt_funciona h3 span {
+    display: block;
+    font-weight: 600;
 }
