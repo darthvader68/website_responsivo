@@ -11,6 +11,7 @@
 
 body {
     background-color: #e3e3e3;
+    height: 900vh;
 }
 .header_hero {
     background-image: url('img/bg-inicio-site.jpg');
@@ -271,7 +272,7 @@ section.vantagens {
 
 /* estilo da secao como funciona: */
 .como_funciona {
-    padding: 80px 0;
+    padding: 80px;
 }
 
 .interface5 {
@@ -288,6 +289,12 @@ section.vantagens {
     vertical-align: top;
 }
 
+.como_funciona .interface5 .txt_funciona {
+    position: sticky;
+    top: 50%;
+    padding-bottom: 35px;
+}
+
 .txt_funciona h3 {
     font-size: 3em;
     font-weight: 200;
@@ -296,5 +303,32 @@ section.vantagens {
 
 .txt_funciona h3 span {
     display: block;
-    font-weight: 600;
+    font-weight: 700;
+}
+
+.instru_box {
+    display: flex;
+    align-items: center;
+    gap: 20px; /*afasta o texto da imagem*/
+    margin-bottom: 40px;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.instru_box img {
+    max-width: 100px;
+}
+
+.instru_box h4 {
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.instru_box h4 span {
+    font-weight: 300;
+}
+
+.instru_box p {
+    line-height: 20px;
 }
