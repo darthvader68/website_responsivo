@@ -11,7 +11,6 @@
 
 body {
     background-color: #e3e3e3;
-    height: 900vh;
 }
 .header_hero {
     background-image: url('img/bg-inicio-site.jpg');
@@ -331,4 +330,47 @@ section.vantagens {
 
 .instru_box p {
     line-height: 20px;
+}
+
+/* estilo do footer */
+footer {
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.top_footer button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: .5s;
+}
+
+.top_footer button:hover {
+    background-color: white;
+    color: black;
+}
+
+.midle_footer {
+    margin: 20px 0;
+}
+
+.midle_footer a {
+    color: white;
+    margin: 0 15px;
+}
+.bottom_footer {
+    border-top: 2px solid white;
+}
+
+.bottom_footer p {
+    color: white;
+    margin-top: 10px;
+
 }
