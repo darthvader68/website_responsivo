@@ -197,8 +197,8 @@ section.vantagens {
     padding: 20px;
     transition: 0.5s;
     color: black;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .contatos .icons_contatos button i {
@@ -340,21 +340,32 @@ footer {
     padding: 30px 0;
 }
 
+.interface6 {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .top_footer button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border: 2px solid white;
-    background-color: transparent;
-    color: white;
+    background-color: #E3E3E3;
+    color: black;
     font-size: 24px;
     margin: 0 10px;
     transition: .5s;
 }
 
 .top_footer button:hover {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white ;
+}
+
+.top_footer a {
+    text-decoration: none;
+    color: white;
 }
 
 .midle_footer {
@@ -362,6 +373,7 @@ footer {
 }
 
 .midle_footer a {
+    text-decoration: none;
     color: white;
     margin: 0 15px;
 }
@@ -371,6 +383,6 @@ footer {
 
 .bottom_footer p {
     color: white;
-    margin-top: 10px;
-
+    margin-top: 30px;
 }
+
