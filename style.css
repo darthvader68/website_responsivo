@@ -22,14 +22,52 @@ body {
 /* estilos do header */
 header {
     width: 100%;
-    padding: 20px 0;
+    padding: 40px 0;
+    position: fixed;
+    top: 0;
+    transition: 0.5s;
+    z-index: 999;
  }
 
 .logo img {
     max-width: 40px;
 }
 
-.menu {
+/* estilo do menu dinamico */
+.logo img .logo_preta {
+    display: none;
+}
+
+header.rolar {
+    background-color: white;
+    padding: 20px 0;
+    box-shadow: 0 0 8px #00000061;
+ }
+
+ header.rolar .menu_desktop nav ul li a {
+    color: black;
+ }
+
+ header.rolar .btn_contato button {
+    border: 1px solid black;
+    color: black;
+ }
+
+ header.rolar .btn_contato button:hover {
+    background-color: black;
+    color: white;
+ }
+
+ header.rolar .logo .logo_branca {
+    display: none;
+ }
+ 
+ header.rolar .logo .logo_preta {
+    display: block;
+ }
+
+/* fim do estilo do menu dinamico */
+.interface {
     max-width: 1280px;
     display: flex;
     flex-direction: row;
@@ -81,7 +119,7 @@ button:hover {
 
 .hero-site {
 
-    height: 100%;
+    height: 600px;
     color: white;
     margin-top: 0 auto;
     padding: 80px;
@@ -289,7 +327,6 @@ section.vantagens {
 }
 
 .como_funciona .interface5 .txt_funciona {
-    position: sticky;
     top: 50%;
     padding-bottom: 35px;
 }
