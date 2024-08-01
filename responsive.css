@@ -1,0 +1,46 @@
+/* media para celulares - ate 667px */
+
+@media screen and (max-width: 667px) {
+    .menu_desktop, .btn_contato {
+        display: none; /*os itens nao aparecerao*/
+    }
+
+    /* reponsividadede do text_hero */
+    .txt_hero h1 {
+        font-size: 2.6em;
+        line-height: 45px;
+    }
+    
+    span {
+        font-weight: normal;
+    }
+    
+    .txt_hero p {
+        font-size: 15px;
+    }
+
+    .txt_hero p span {
+        display: inline;
+    }
+    
+    .txt_hero a button {
+        font-size: 18px;
+    }
+
+    /* responsividade das vantagens */
+    .vantagens .itens_container {
+        flex-direction: column;
+    }
+    
+    .img_itens img {
+        width: 100%; /*a imagem se ajusta ao tamanho da responsividade*/
+    }
+    
+    .txt_itens p {
+        margin-bottom: 20px;
+    }
+
+    .item_01 { 
+        order: 0;
+    }
+}
