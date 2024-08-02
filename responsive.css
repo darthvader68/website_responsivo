@@ -36,11 +36,78 @@
         width: 100%; /*a imagem se ajusta ao tamanho da responsividade*/
     }
     
-    .txt_itens p {
+    .itens_container .txt_itens p {
         margin-bottom: 20px;
     }
 
     .item_01 { 
+        order: 1; /*o order so funcionara se o fexbox foi usado no container*/
+    }
+
+    .item_02 { 
         order: 0;
+    }
+
+    /* responsividade dos contatos */
+
+    .interface3  {
+        display: block;
+        width: 100%;
+        padding-left: 70px;
+    }
+
+    .txt_contatos h3 {
+        font-size: 2em;
+        line-height: 40px;
+    }
+
+    .icons_contatos {
+        margin-bottom: 40px;
+    }
+
+    /* responsividade da secao hoteis */
+
+    .interface4 {
+        margin-top: 60px;
+    }
+
+    .hoteis h3 {
+        font-size: 2.3em;
+        line-height: 40px;
+    }
+
+    .hoteis p {
+        margin: 20px 0;
+        font-size: 16px;
+    }
+
+    /* estilo da secao como funciona: */
+
+    .interface5 {
+        display: block;
+        width: 100%;
+    }
+    
+    .txt_funciona, .instrucoes {
+        display: block;
+        width: 100%;
+        margin: auto;
+        
+    }
+    
+    .como_funciona .interface5 .txt_funciona {
+        top: 50%;
+        padding-bottom: 35px;
+    }
+    
+    .txt_funciona h3 {
+        font-size: 3em;
+        line-height: 50px;
+    }
+    
+    .instru_box {
+        flex-direction: column;
+        text-align: center;
+        border-radius: 5px;
     }
 }
