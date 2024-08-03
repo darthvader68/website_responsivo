@@ -5,6 +5,10 @@
         display: none; /*os itens nao aparecerao*/
     }
 
+    header .btn_menu_mob {
+        display: block;
+    }
+
     /* reponsividadede do text_hero */
     .txt_hero h1 {
         font-size: 2.6em;

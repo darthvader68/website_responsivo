@@ -115,9 +115,39 @@ button:hover {
     color: #163778;
 }
 
+/* estilo do botao do menu mobile (linhas) */
+header .btn_menu_mob {
+    display: none;
+}
+
+header .btn_menu_mob div {
+    background-color: white;
+    height: 3px;
+    margin: 10px 0;
+    transition: 0.2s;
+}
+header .btn_menu_mob .line_menumob_01{
+    width: 30px;
+}
+
+header .btn_menu_mob .line_menumob_02{
+    width: 20px;
+}
+
+header.rolar .btn_menu_mob div { /*faz com que o menu apareca durante a rolagem*/
+    background-color: black;
+}
+
+header .btn_menu_mob .line_menumob_01.ativo1 { /*faz com que o menu vire um x ao ser clicado*/
+    transform: rotate(45deg) translate(30%);
+} 
+
+header .btn_menu_mob .line_menumob_02.ativo2 { /*faz com que o menu vire um x ao ser clicado*/
+    transform: rotate(-45deg) translate(30%);
+    width: 30px;
+} 
+
 /* Estilo do hero */
-
-
 .hero-site {
 
     height: 600px;
